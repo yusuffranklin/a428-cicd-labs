@@ -14,7 +14,7 @@ pipeline {
        	stage('Test') {
             steps {
                 sh './jenkins/scripts/test.sh'
-		input message: 'Lanjutkan ke tahap Deploy? Klik "Proceed untuk lanjutkan."
+		input message: 'Lanjutkan ke tahap Deploy? Klik "Proceed" untuk lanjutkan.'
             }
         }
 	stage('Deploy'){
